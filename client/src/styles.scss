@@ -5,19 +5,42 @@
   @include mat.button-overrides((
     filled-container-shape: '6px',
     outlined-container-shape: '6px',
-    outlined-label-text-color: rgb(109, 9, 162),
+    outlined-label-text-color: rgb(97, 4, 147),
     outlined-outline-color: rgb(97, 4, 147),
 
   ));
+  
   @include mat.badge-overrides((
     background-color: rgba(97, 4, 147, 0.921),
     text-color: white,
     container-shape: '20px'
   ));
+
+  .match-input-height {
+    height: var(--mat-form-field-container-height) !important;
+  } 
 }
+@import "tailwindcss" ;
 
-@import "tailwindcss";
-
+.text-primary{
+  @apply text-purple-900
+}
 .container {
-    @apply mx-auto max-w-screen-2xl px-6
+  @apply mx-auto max-w-screen-2xl px-6
 }
+
+.mat-mdc-menu-panel {
+  background-color: white !important;
+  opacity: 0.9 !important;
+}
+
+.mat-mdc-select-panel {
+  background-color: white !important;
+  opacity: 0.9 !important;
+
+}
+
+
+
+
+
