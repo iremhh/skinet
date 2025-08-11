@@ -23,7 +23,29 @@
   .mdc-notched-outline__notch {
     border-right-style: none !important
   }
+
+  .snack-error {
+    @include mat.snack-bar-overrides((
+      button-color: white,
+      container-color: red,
+      supporting-text-color: white
+    ));
+
+    .mat-simple-snackbar-action {
+    &:hover {
+      background-color: red !important;  // or use the color you want
+    }
+  }
+  }
+  .snack-success {
+    @include mat.snack-bar-overrides((
+      button-color: white,
+      container-color: green,
+      supporting-text-color: white
+    ));
+  }
 }
+
 @import "tailwindcss" ;
 
 .text-primary{

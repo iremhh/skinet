@@ -1,0 +1,16 @@
+.icon-display {
+  color: #6b21a8; /* Tailwind's purple-700 hex */
+}
+
+.purple-btn {
+  background-color: #6b21a8 !important; /* purple-700 background */
+  color: white !important;
+}
+
+.purple-btn:hover {
+  background-color: #581c87 !important; /* darker purple on hover */
+}
+
+.icon-display{
+    transform: scale(3);
+}
