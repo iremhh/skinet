@@ -1,0 +1,23 @@
+.match-input-height {
+  background-color: rgb(97, 4, 147) !important; /* Material deep purple */
+  color: white !important;              /* White text */
+}
+
+.match-input-height mat-icon {
+  color: white !important; /* Make the icon white too */
+}
+
+.add-to-cart-btn {
+  width: 150px;
+  height: 56px;
+  background-color: rgb(97, 4, 147);
+  color: white;
+}
+
+.add-to-cart-btn mat-icon {
+  color: white !important; /* Make the icon white too */
+}
+
+mat-form-field input {
+  padding-left: 8px;  /* push text a bit right */
+}
