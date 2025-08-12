@@ -1,0 +1,30 @@
+.checkout-btn {
+  background-color: #6b21a8 !important; /* Tailwind purple-700 */
+  color: white !important;
+}
+
+.checkout-btn:hover {
+  background-color: #581c87 !important; /* darker purple on hover */
+}
+
+.continue-btn {
+  background-color: white !important;
+  color: #6b21a8 !important;
+  border: 1px solid #6b21a8 !important;
+  border-radius: 4px;
+  
+}
+
+.continue-btn:hover {
+  background-color: #f3e8ff !important; /* light purple hover */
+}
+
+.apply-btn {
+  background-color: #6b21a8 !important; /* Tailwind purple-700 */
+  color: white !important;
+}
+
+.apply-btn:hover {
+  background-color: #581c87 !important; /* darker purple on hover */
+}
+

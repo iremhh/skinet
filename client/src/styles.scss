@@ -46,14 +46,15 @@
   }
 }
 
-@import "tailwindcss" ;
+@import "tailwindcss" important ;
 
 .text-primary{
   @apply text-purple-900
 }
 .container {
-  @apply mx-auto max-w-screen-2xl px-6
+  @apply mx-auto max-w-screen-2xl 
 }
+
 
 .mat-mdc-menu-panel {
   background-color: white !important;
@@ -64,6 +65,13 @@
   background-color: white !important;
   opacity: 0.9 !important;
 
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 }
 
 

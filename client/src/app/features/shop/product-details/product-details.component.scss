@@ -12,6 +12,7 @@
   height: 56px;
   background-color: rgb(97, 4, 147);
   color: white;
+  white-space: nowrap;
 }
 
 .add-to-cart-btn mat-icon {
@@ -21,3 +22,14 @@
 mat-form-field input {
   padding-left: 8px;  /* push text a bit right */
 }
+
+.add-to-cart-btn[disabled],
+.add-to-cart-btn.mat-button-disabled,
+.add-to-cart-btn[aria-disabled="true"] {
+  background-color: #d1d5db !important; /* light gray */
+  color: #6b7280 !important;            /* gray text */
+  pointer-events: none;                 /* optional */
+  opacity: 0.8;
+}
+
+
