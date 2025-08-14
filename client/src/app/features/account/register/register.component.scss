@@ -1,0 +1,55 @@
+/* Purple focus border */
+::ng-deep app-text-input .mat-mdc-text-field-wrapper.mdc-text-field--outlined.mdc-text-field--focused
+  .mdc-notched-outline__leading,
+::ng-deep app-text-input .mat-mdc-text-field-wrapper.mdc-text-field--outlined.mdc-text-field--focused
+  .mdc-notched-outline__trailing,
+::ng-deep app-text-input .mat-mdc-text-field-wrapper.mdc-text-field--outlined.mdc-text-field--focused
+  .mdc-notched-outline__notch {
+  border-color: #5B21B6 !important;
+}
+
+/* Placeholder (label) turns purple on focus */
+::ng-deep app-text-input .mat-mdc-text-field-wrapper.mdc-text-field--outlined.mdc-text-field--focused 
+.mat-mdc-floating-label {
+  color: #5B21B6 !important;
+  font-weight: 600;
+}
+
+/* Red border when invalid and touched */
+::ng-deep app-text-input .mat-mdc-form-field.mat-form-field-invalid
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mdc-notched-outline__leading,
+::ng-deep app-text-input .mat-mdc-form-field.mat-form-field-invalid
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mdc-notched-outline__trailing,
+::ng-deep app-text-input .mat-mdc-form-field.mat-form-field-invalid
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mdc-notched-outline__notch {
+  border-color: #DC2626 !important;
+}
+
+/* Red label when invalid (focused or not) */
+::ng-deep app-text-input .mat-mdc-form-field.mat-form-field-invalid .mat-mdc-floating-label,
+::ng-deep app-text-input .mat-mdc-form-field.mat-form-field-invalid
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined.mdc-text-field--focused
+  .mat-mdc-floating-label {
+  color: #DC2626 !important;
+  font-weight: 600;
+}
+
+
+
+::ng-deep .mat-mdc-input-element {
+  padding-left: 0.3rem !important;
+
+}
+
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined {
+  padding-left: 0.3rem !important;
+}
+
+.bg-primary {
+  background-color: #5B21B6;
+  color: white;
+  font-weight: 600;
+}
