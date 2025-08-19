@@ -9,6 +9,19 @@
     outlined-outline-color: rgb(97, 4, 147),
 
   ));
+
+  @include mat.stepper-overrides((
+    header-edit-state-icon-background-color: rgb(2, 91, 180),
+    header-edit-state-icon-foreground-color: white,
+    header-done-state-icon-background-color: green,
+    header-done-state-icon-foreground-color: white,
+    header-icon-background-color:  rgb(99, 99, 99),
+    header-icon-foreground-color: white,
+    header-hover-state-layer-shape: 12px,
+    header-hover-state-layer-color: rgb(207, 205, 205),
+    header-selected-state-icon-background-color: rgb(2, 91, 180),
+    header-selected-state-icon-foreground-color: white
+  ));
   
   @include mat.badge-overrides((
     background-color: rgba(97, 4, 147, 0.921),
