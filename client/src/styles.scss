@@ -29,6 +29,10 @@
     container-shape: '20px'
   ));
 
+  @include mat.progress-spinner-overrides((
+    active-indicator-color: gray
+  ));
+
   .match-input-height {
     height: var(--mat-form-field-container-height) !important;
   } 
