@@ -173,7 +173,8 @@ export class CheckoutComponent {
         expYear: card.exp_year
       },
       deliveryMethodId: cart.deliveryMethodId,
-      shippingAddress
+      shippingAddress,
+      discount: this.cartService.totals()?.discount
     }
 }
   private async getAddressFromStripeAddress(): Promise<Address | ShippingAddress | null> {

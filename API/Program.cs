@@ -27,6 +27,7 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
     var configuation = ConfigurationOptions.Parse(connString, true);
     return ConnectionMultiplexer.Connect(configuation);
 });
+builder.Services.AddScoped<ICouponService, CouponService>();
 
 builder.Services.AddSingleton<ICartService, CartService>();
 builder.Services.AddAuthorization();

@@ -12,6 +12,7 @@ public class ShoppingCart
     public string? ClientSecret { get; set; } //we get this when we create a payment intent
 
     public string? PaymentIntentId { get; set; }
+    public AppCoupon? Coupon { get; set; }
 
 
     
