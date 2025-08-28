@@ -35,9 +35,9 @@
         code?</label>
       @if (cartService.cart()?.coupon; as coupon) {
         <div class="flex justify-between items-center">
-          <span class="text-sm font-semibold">{{coupon.name}} applied</span>
+          <span class="text-sm font-semibold text-red-700">{{coupon.name}} applied</span>
           <button (click)="removeCouponCode()" mat-icon-button>
-            <mat-icon color="warn">delete</mat-icon>
+            <mat-icon class="text-red-700">delete</mat-icon>
           </button>
         </div>
       }
@@ -50,6 +50,7 @@
       <button
         [disabled]="!!cartService.cart()?.coupon"
         type="submit"
+        class="bg-purple-800 hover:bg-purple-900 text-white"
         mat-flat-button>Apply code
       </button>
     </form>
