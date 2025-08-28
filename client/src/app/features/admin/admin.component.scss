@@ -1,0 +1,16 @@
+::ng-deep button[mat-icon-button][disabled] {
+  color: gray !important;      // icon color
+  opacity: 0.5;                // faded look
+  cursor: not-allowed;         // classic disabled cursor
+}
+
+::ng-deep button[mat-icon-button][disabled] mat-icon {
+  color: gray !important;      // ensure the icon itself turns gray
+}
+::ng-deep .mat-mdc-tab {
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05); // slightly darker
+  }
+}
